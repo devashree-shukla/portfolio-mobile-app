@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "233097777589",
+    "project_id": "devashreeshuklaportfolio",
+    "storage_bucket": "devashreeshuklaportfolio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233097777589:android:95c0817e11d856f42989fc",
+        "android_client_info": {
+          "package_name": "com.devashreeshukla.devashreeshuklaportfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233097777589-e3tue1a0iovn14ptp2pj65addt4c424i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devashreeshukla.devashreeshuklaportfolio",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "233097777589-or2l3m7897ub8s8l6bm6rbg83nk01ue4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX28k4ZhbVD1SaaiG_XtOa9AHo35qL4sk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233097777589-or2l3m7897ub8s8l6bm6rbg83nk01ue4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "233097777589-1khj6q1tfav3c2u0mmqel06stb0cvs7v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.devashreeshukla.devashreeshuklaportfolio"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
