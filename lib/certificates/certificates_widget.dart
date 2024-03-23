@@ -3,13 +3,9 @@ import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:page_transition/page_transition.dart';
-import 'package:provider/provider.dart';
 import 'certificates_model.dart';
 export 'certificates_model.dart';
 
@@ -54,10 +50,10 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
             snap: false,
             backgroundColor: FlutterFlowTheme.of(context).primary,
             automaticallyImplyLeading: false,
-            actions: [],
+            actions: const [],
             flexibleSpace: FlexibleSpaceBar(
               title: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -65,12 +61,12 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: FlutterFlowIconButton(
                               borderColor: Colors.transparent,
@@ -88,7 +84,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
@@ -114,6 +110,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
               centerTitle: true,
               expandedTitleScale: 1.0,
             ),
+            toolbarHeight: 100.0,
             elevation: 2.0,
           )
         ],
@@ -136,7 +133,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                       builder: (context, snapshot) {
                         // Customize what your widget looks like when it's loading.
                         if (!snapshot.hasData) {
-                          return Center(
+                          return const Center(
                             child: SizedBox(
                               width: 50.0,
                               height: 50.0,
@@ -158,7 +155,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                             final listViewCertificateRecord =
                                 listViewCertificateRecordList[listViewIndex];
                             return Padding(
-                              padding: EdgeInsets.all(16.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Material(
                                 color: Colors.transparent,
                                 elevation: 4.0,
@@ -169,7 +166,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                                   width: double.infinity,
                                   decoration: BoxDecoration(
                                     color: Colors.white,
-                                    boxShadow: [
+                                    boxShadow: const [
                                       BoxShadow(
                                         blurRadius: 4.0,
                                         color: Color(0x33000000),
@@ -184,7 +181,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                                         CrossAxisAlignment.stretch,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 16.0, 0.0, 0.0),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
@@ -199,9 +196,9 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                                                 child:
                                                     FlutterFlowExpandedImageView(
                                                   image: CachedNetworkImage(
-                                                    fadeInDuration: Duration(
+                                                    fadeInDuration: const Duration(
                                                         milliseconds: 500),
-                                                    fadeOutDuration: Duration(
+                                                    fadeOutDuration: const Duration(
                                                         milliseconds: 500),
                                                     imageUrl:
                                                         listViewCertificateRecord
@@ -225,9 +222,9 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                                                   BorderRadius.circular(12.0),
                                               child: CachedNetworkImage(
                                                 fadeInDuration:
-                                                    Duration(milliseconds: 500),
+                                                    const Duration(milliseconds: 500),
                                                 fadeOutDuration:
-                                                    Duration(milliseconds: 500),
+                                                    const Duration(milliseconds: 500),
                                                 imageUrl:
                                                     listViewCertificateRecord
                                                         .certificateImage,
@@ -240,7 +237,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 16.0, 16.0, 16.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -256,7 +253,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color:
-                                                            Color(0xFF57636C),
+                                                            const Color(0xFF57636C),
                                                         fontSize: 14.0,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -270,7 +267,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                                                   .titleMedium
                                                   .override(
                                                     fontFamily: 'Outfit',
-                                                    color: Color(0xFF101213),
+                                                    color: const Color(0xFF101213),
                                                     fontSize: 18.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
@@ -284,7 +281,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color:
-                                                            Color(0xFF57636C),
+                                                            const Color(0xFF57636C),
                                                         fontSize: 14.0,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -305,7 +302,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color:
-                                                            Color(0xFF57636C),
+                                                            const Color(0xFF57636C),
                                                         fontSize: 14.0,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -333,7 +330,7 @@ class _CertificatesWidgetState extends State<CertificatesWidget> {
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color:
-                                                              Color(0xFF167FCE),
+                                                              const Color(0xFF167FCE),
                                                           fontSize: 14.0,
                                                           fontWeight:
                                                               FontWeight.normal,

@@ -1,16 +1,10 @@
 import '/backend/backend.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'projects_model.dart';
 export 'projects_model.dart';
 
@@ -56,10 +50,10 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
             snap: false,
             backgroundColor: FlutterFlowTheme.of(context).primary,
             automaticallyImplyLeading: false,
-            actions: [],
+            actions: const [],
             flexibleSpace: FlexibleSpaceBar(
               title: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -67,13 +61,13 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: FlutterFlowIconButton(
                               borderColor: Colors.transparent,
@@ -91,7 +85,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
@@ -118,6 +112,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
               centerTitle: true,
               expandedTitleScale: 1.0,
             ),
+            toolbarHeight: 100.0,
             elevation: 2.0,
           )
         ],
@@ -130,7 +125,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           16.0, 16.0, 16.0, 16.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
@@ -146,7 +141,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                     ),
                     Flexible(
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 8.0, 16.0, 8.0),
                         child: StreamBuilder<List<ProjectdomainRecord>>(
                           stream: queryProjectdomainRecord(
@@ -156,7 +151,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                           builder: (context, snapshot) {
                             // Customize what your widget looks like when it's loading.
                             if (!snapshot.hasData) {
-                              return Center(
+                              return const Center(
                                 child: SizedBox(
                                   width: 50.0,
                                   height: 50.0,
@@ -182,7 +177,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                           rowCategoriesIndex];
                                   return Flexible(
                                     child: Padding(
-                                      padding: EdgeInsets.all(5.0),
+                                      padding: const EdgeInsets.all(5.0),
                                       child: Material(
                                         color: Colors.transparent,
                                         elevation: 2.0,
@@ -195,7 +190,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                           height: 40.0,
                                           decoration: BoxDecoration(
                                             color: Colors.white,
-                                            boxShadow: [
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
@@ -218,7 +213,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                             children: [
                                               Flexible(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           8.0, 0.0, 8.0, 0.0),
                                                   child: SelectionArea(
@@ -248,7 +243,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 8.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -262,7 +257,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           16.0, 16.0, 16.0, 16.0),
                       child: StreamBuilder<List<ProjectsRecord>>(
                         stream: _model.loadProjects(
@@ -274,7 +269,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                         builder: (context, snapshot) {
                           // Customize what your widget looks like when it's loading.
                           if (!snapshot.hasData) {
-                            return Center(
+                            return const Center(
                               child: SizedBox(
                                 width: 50.0,
                                 height: 50.0,
@@ -300,12 +295,12 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                   projectsListViewProjectsRecordList[
                                       projectsListViewIndex];
                               return Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 16.0, 0.0, 16.0),
                                 child: Material(
                                   color: Colors.transparent,
                                   elevation: 10.0,
-                                  shape: RoundedRectangleBorder(
+                                  shape: const RoundedRectangleBorder(
                                     borderRadius: BorderRadius.only(
                                       bottomLeft: Radius.circular(12.0),
                                       bottomRight: Radius.circular(12.0),
@@ -314,17 +309,17 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                     ),
                                   ),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.only(
+                                    borderRadius: const BorderRadius.only(
                                       bottomLeft: Radius.circular(12.0),
                                       bottomRight: Radius.circular(12.0),
                                       topLeft: Radius.circular(12.0),
                                       topRight: Radius.circular(12.0),
                                     ),
                                     child: AnimatedContainer(
-                                      duration: Duration(milliseconds: 100),
+                                      duration: const Duration(milliseconds: 100),
                                       curve: Curves.bounceOut,
                                       width: double.infinity,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Colors.white,
                                         boxShadow: [
                                           BoxShadow(
@@ -347,7 +342,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 16.0, 16.0, 0.0),
                                               child: Row(
@@ -383,13 +378,10 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                         ),
                                                         if (projectsListViewProjectsRecord
                                                                     .projectUrl !=
-                                                                null &&
-                                                            projectsListViewProjectsRecord
-                                                                    .projectUrl !=
                                                                 '')
                                                           Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     1.0, -1.0),
                                                             child:
                                                                 FlutterFlowIconButton(
@@ -421,14 +413,14 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                             ),
                                                           ),
                                                       ].divide(
-                                                          SizedBox(width: 8.0)),
+                                                          const SizedBox(width: 8.0)),
                                                     ),
                                                   ),
                                                 ],
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 0.0, 16.0, 0.0),
                                               child: Column(
@@ -444,26 +436,8 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                                         context)
                                                                     .languageCode,
                                                               ) !=
-                                                              null &&
-                                                          dateTimeFormat(
-                                                                'yMMMd',
-                                                                projectsListViewProjectsRecord
-                                                                    .projectStartDate,
-                                                                locale: FFLocalizations.of(
-                                                                        context)
-                                                                    .languageCode,
-                                                              ) !=
                                                               '') &&
                                                       (dateTimeFormat(
-                                                                'yMMMd',
-                                                                projectsListViewProjectsRecord
-                                                                    .projectEndDate,
-                                                                locale: FFLocalizations.of(
-                                                                        context)
-                                                                    .languageCode,
-                                                              ) !=
-                                                              null &&
-                                                          dateTimeFormat(
                                                                 'yMMMd',
                                                                 projectsListViewProjectsRecord
                                                                     .projectEndDate,
@@ -528,9 +502,9 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                               .bodyMedium,
                                                         ),
                                                     ].divide(
-                                                        SizedBox(width: 8.0)),
+                                                        const SizedBox(width: 8.0)),
                                                   ),
-                                                ].divide(SizedBox(height: 8.0)),
+                                                ].divide(const SizedBox(height: 8.0)),
                                               ),
                                             ),
                                             Row(
@@ -543,11 +517,11 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                 Expanded(
                                                   child: Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             -0.05, 0.0),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   0.0,
@@ -568,7 +542,7 @@ class _ProjectsWidgetState extends State<ProjectsWidget>
                                                 ),
                                               ],
                                             ),
-                                          ].divide(SizedBox(height: 8.0)),
+                                          ].divide(const SizedBox(height: 8.0)),
                                         ),
                                       ),
                                     ),

@@ -148,6 +148,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'gu': '',
       'hi': '',
     },
+    'a772cfs2': {
+      'en': 'Blogs',
+      'gu': '',
+      'hi': '',
+    },
     'jp3xyvky': {
       'en': 'Testimonials',
       'gu': '',
@@ -234,6 +239,67 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'hi': '',
     },
   },
+  // TechnicalWritings
+  {
+    'p5lsrtze': {
+      'en': 'Technical Writings',
+      'gu': '',
+      'hi': '',
+    },
+  },
+  // CreativeWritings
+  {
+    'pzpwy72t': {
+      'en': 'Creative Writings',
+      'gu': '',
+      'hi': '',
+    },
+  },
+  // Blogs
+  {
+    'ahrw86ts': {
+      'en': 'Other Stays',
+      'gu': '',
+      'hi': '',
+    },
+    'xrkoyv3w': {
+      'en': 'Technical Writings',
+      'gu': '',
+      'hi': '',
+    },
+    'ohos4ckm': {
+      'en':
+          'I\'ve been writing blog posts related to upcoming technical trends, tutorials and various technical guides which help myself gain deeper clarity about the concept, while at the same time i can share my knowledge with the world.',
+      'gu': '',
+      'hi': '',
+    },
+    'js5papur': {
+      'en': 'View List',
+      'gu': '',
+      'hi': '',
+    },
+    'fp6dm17e': {
+      'en': 'Creative Writings',
+      'gu': '',
+      'hi': '',
+    },
+    'cguwmh2c': {
+      'en':
+          'Whenever i\'m in a creative zone in my life, i utilise it to create something during that phase of life. It helps me express myself as a human being, at the same time creating great memories to be cherished in the future to restrospect deeper.',
+      'gu': '',
+      'hi': '',
+    },
+    '8kvtch6h': {
+      'en': 'View List',
+      'gu': '',
+      'hi': '',
+    },
+    '0mlgyr6p': {
+      'en': 'Blogs',
+      'gu': '',
+      'hi': '',
+    },
+  },
   // AboutMe
   {
     'v0cpyl7n': {
@@ -249,7 +315,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'maglm1ix': {
       'en':
-          'I utilise my knowledge & skill-set in efficient ways to deliver value. I was recently awarded for being an emerging team-lead for one of the core modules in our OTT project. I\'ve succesfully tackled time-sensitive high-priority tasks by collaborating with various stackholders and succesfully executing software development activities, which resulted in avoiding compliance issues for the company. I always thrive at being an invaluable asset for the companies I have worked for. I admire being a guide to all the junior team members and help them onboard and navigate the projects. \n\nCurrently, I am  learning and extending my skills for...',
+          'I utilise my knowledge & skill-set in efficient ways to deliver value. I was recently awarded for being an emerging team-lead for one of the core modules in our OTT project. I\'ve succesfully tackled time-sensitive high-priority tasks by collaborating with various stackholders and succesfully executing software development activities, which resulted in avoiding compliance issues for the company. I always thrive at being an invaluable asset for the companies I have worked for. I take pride in guiding all junior team members, helping them onboard and navigate through projects. \n\nCurrently, I am  learning and extending my skills for...',
       'gu': '',
       'hi': '',
     },

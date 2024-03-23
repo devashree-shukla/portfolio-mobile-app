@@ -2,11 +2,8 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'education_model.dart';
 export 'education_model.dart';
 
@@ -51,10 +48,10 @@ class _EducationWidgetState extends State<EducationWidget> {
             snap: false,
             backgroundColor: FlutterFlowTheme.of(context).primary,
             automaticallyImplyLeading: false,
-            actions: [],
+            actions: const [],
             flexibleSpace: FlexibleSpaceBar(
               title: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -62,12 +59,12 @@ class _EducationWidgetState extends State<EducationWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: FlutterFlowIconButton(
                               borderColor: Colors.transparent,
@@ -85,7 +82,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
@@ -111,6 +108,7 @@ class _EducationWidgetState extends State<EducationWidget> {
               centerTitle: true,
               expandedTitleScale: 1.0,
             ),
+            toolbarHeight: 100.0,
             elevation: 2.0,
           )
         ],
@@ -130,7 +128,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                       builder: (context, snapshot) {
                         // Customize what your widget looks like when it's loading.
                         if (!snapshot.hasData) {
-                          return Center(
+                          return const Center(
                             child: SizedBox(
                               width: 50.0,
                               height: 50.0,
@@ -152,7 +150,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                             final listViewAcademicsRecord =
                                 listViewAcademicsRecordList[listViewIndex];
                             return Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 16.0, 16.0, 16.0),
                               child: Material(
                                 color: Colors.transparent,
@@ -164,7 +162,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                                   width: double.infinity,
                                   decoration: BoxDecoration(
                                     color: Colors.white,
-                                    boxShadow: [
+                                    boxShadow: const [
                                       BoxShadow(
                                         blurRadius: 4.0,
                                         color: Color(0x33000000),
@@ -174,7 +172,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 16.0, 16.0, 16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -187,7 +185,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                                               .bodySmall
                                               .override(
                                                 fontFamily: 'Outfit',
-                                                color: Color(0xFF57636C),
+                                                color: const Color(0xFF57636C),
                                                 fontSize: 14.0,
                                                 fontWeight: FontWeight.normal,
                                               ),
@@ -202,14 +200,12 @@ class _EducationWidgetState extends State<EducationWidget> {
                                                   .titleMedium
                                                   .override(
                                                     fontFamily: 'Outfit',
-                                                    color: Color(0xFF101213),
+                                                    color: const Color(0xFF101213),
                                                     fontSize: 18.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                             ),
                                             if (listViewAcademicsRecord.url !=
-                                                    null &&
-                                                listViewAcademicsRecord.url !=
                                                     '')
                                               FlutterFlowIconButton(
                                                 borderColor:
@@ -234,7 +230,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                                                           .url);
                                                 },
                                               ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                         Text(
                                           listViewAcademicsRecord.fieldOfStudy,
@@ -242,7 +238,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                                               .bodySmall
                                               .override(
                                                 fontFamily: 'Outfit',
-                                                color: Color(0xFF57636C),
+                                                color: const Color(0xFF57636C),
                                                 fontSize: 14.0,
                                                 fontWeight: FontWeight.normal,
                                               ),
@@ -263,7 +259,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                                               .bodySmall
                                               .override(
                                                 fontFamily: 'Outfit',
-                                                color: Color(0xFF57636C),
+                                                color: const Color(0xFF57636C),
                                                 fontSize: 14.0,
                                                 fontWeight: FontWeight.normal,
                                               ),
@@ -274,12 +270,12 @@ class _EducationWidgetState extends State<EducationWidget> {
                                               .bodySmall
                                               .override(
                                                 fontFamily: 'Outfit',
-                                                color: Color(0xFF57636C),
+                                                color: const Color(0xFF57636C),
                                                 fontSize: 14.0,
                                                 fontWeight: FontWeight.normal,
                                               ),
                                         ),
-                                      ].divide(SizedBox(height: 10.0)),
+                                      ].divide(const SizedBox(height: 10.0)),
                                     ),
                                   ),
                                 ),

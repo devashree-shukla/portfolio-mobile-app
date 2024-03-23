@@ -2,9 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'about_me_model.dart';
 export 'about_me_model.dart';
 
@@ -42,11 +39,11 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 100.0, 0.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 100.0, 0.0, 0.0),
       child: Container(
         width: double.infinity,
         height: 861.7,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.white,
           boxShadow: [
             BoxShadow(
@@ -63,7 +60,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
           ),
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 16.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 16.0),
           child: SingleChildScrollView(
             controller: _model.columnController,
             child: Column(
@@ -77,7 +74,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                   onTap: () async {
                     await _model.columnController?.animateTo(
                       _model.columnController!.position.maxScrollExtent,
-                      duration: Duration(milliseconds: 100),
+                      duration: const Duration(milliseconds: 100),
                       curve: Curves.ease,
                     );
                   },
@@ -85,13 +82,13 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                     width: 60.0,
                     height: 4.0,
                     decoration: BoxDecoration(
-                      color: Color(0xFFDBE2E7),
+                      color: const Color(0xFFDBE2E7),
                       borderRadius: BorderRadius.circular(4.0),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -102,7 +99,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                         style:
                             FlutterFlowTheme.of(context).titleMedium.override(
                                   fontFamily: 'Outfit',
-                                  color: Color(0xFF090F13),
+                                  color: const Color(0xFF090F13),
                                   fontSize: 20.0,
                                   fontWeight: FontWeight.w500,
                                 ),
@@ -111,7 +108,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -123,7 +120,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Outfit',
-                                    color: Color(0xFF7C8791),
+                                    color: const Color(0xFF7C8791),
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -138,17 +135,17 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                   ),
                   style: FlutterFlowTheme.of(context).bodySmall.override(
                         fontFamily: 'Roboto',
-                        color: Color(0xFF7C8791),
+                        color: const Color(0xFF7C8791),
                       ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                         child: Icon(
                           Icons.star_border,
                           color: FlutterFlowTheme.of(context).info,
@@ -163,7 +160,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Outfit',
-                                    color: Color(0xFF7C8791),
+                                    color: const Color(0xFF7C8791),
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -173,13 +170,13 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                         child: Icon(
                           Icons.star_border,
                           color: FlutterFlowTheme.of(context).info,
@@ -194,7 +191,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Outfit',
-                                    color: Color(0xFF7C8791),
+                                    color: const Color(0xFF7C8791),
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -204,13 +201,13 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                         child: Icon(
                           Icons.star_border,
                           color: FlutterFlowTheme.of(context).info,
@@ -225,7 +222,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Outfit',
-                                    color: Color(0xFF7C8791),
+                                    color: const Color(0xFF7C8791),
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -235,13 +232,13 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                         child: Icon(
                           Icons.star_border,
                           color: FlutterFlowTheme.of(context).info,
@@ -256,7 +253,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Outfit',
-                                    color: Color(0xFF7C8791),
+                                    color: const Color(0xFF7C8791),
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -266,13 +263,13 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                         child: Icon(
                           Icons.star_border,
                           color: FlutterFlowTheme.of(context).info,
@@ -287,7 +284,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Outfit',
-                                    color: Color(0xFF7C8791),
+                                    color: const Color(0xFF7C8791),
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -297,13 +294,13 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                         child: Icon(
                           Icons.star_border,
                           color: FlutterFlowTheme.of(context).info,
@@ -318,7 +315,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Outfit',
-                                    color: Color(0xFF7C8791),
+                                    color: const Color(0xFF7C8791),
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -328,13 +325,13 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                         child: Icon(
                           Icons.star_border,
                           color: FlutterFlowTheme.of(context).info,
@@ -349,7 +346,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Outfit',
-                                    color: Color(0xFF7C8791),
+                                    color: const Color(0xFF7C8791),
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -359,13 +356,13 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                         child: Icon(
                           Icons.star_border,
                           color: FlutterFlowTheme.of(context).info,
@@ -381,7 +378,7 @@ class _AboutMeWidgetState extends State<AboutMeWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Outfit',
-                                    color: Color(0xFF7C8791),
+                                    color: const Color(0xFF7C8791),
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.normal,
                                   ),

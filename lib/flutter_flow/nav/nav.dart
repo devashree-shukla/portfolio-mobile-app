@@ -1,19 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
-import '/backend/backend.dart';
 
 import '/index.dart';
-import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -41,14 +33,18 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       errorBuilder: (context, state) => appStateNotifier.showSplashImage
           ? Builder(
               builder: (context) => Container(
-                color: Colors.transparent,
-                child: Image.asset(
-                  'assets/images/Animation_-_1710094379061.gif',
-                  fit: BoxFit.contain,
+                color: FlutterFlowTheme.of(context).primaryBackground,
+                child: Center(
+                  child: Image.asset(
+                    'assets/images/Animation_-_1710483585971.gif',
+                    width: 150.0,
+                    height: 150.0,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             )
-          : HomeWidget(),
+          : const HomeWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
@@ -56,44 +52,63 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, _) => appStateNotifier.showSplashImage
               ? Builder(
                   builder: (context) => Container(
-                    color: Colors.transparent,
-                    child: Image.asset(
-                      'assets/images/Animation_-_1710094379061.gif',
-                      fit: BoxFit.contain,
+                    color: FlutterFlowTheme.of(context).primaryBackground,
+                    child: Center(
+                      child: Image.asset(
+                        'assets/images/Animation_-_1710483585971.gif',
+                        width: 150.0,
+                        height: 150.0,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 )
-              : HomeWidget(),
+              : const HomeWidget(),
         ),
         FFRoute(
           name: 'Home',
           path: '/home',
-          builder: (context, params) => HomeWidget(),
+          builder: (context, params) => const HomeWidget(),
         ),
         FFRoute(
           name: 'Skills',
           path: '/skills',
-          builder: (context, params) => SkillsWidget(),
+          builder: (context, params) => const SkillsWidget(),
         ),
         FFRoute(
           name: 'Companies',
           path: '/education',
-          builder: (context, params) => CompaniesWidget(),
+          builder: (context, params) => const CompaniesWidget(),
         ),
         FFRoute(
           name: 'Projects',
           path: '/projects',
-          builder: (context, params) => ProjectsWidget(),
+          builder: (context, params) => const ProjectsWidget(),
         ),
         FFRoute(
           name: 'Education',
           path: '/CompaniesCopy',
-          builder: (context, params) => EducationWidget(),
+          builder: (context, params) => const EducationWidget(),
         ),
         FFRoute(
           name: 'Certificates',
           path: '/Certificates',
-          builder: (context, params) => CertificatesWidget(),
+          builder: (context, params) => const CertificatesWidget(),
+        ),
+        FFRoute(
+          name: 'TechnicalWritings',
+          path: '/TechnicalWritings',
+          builder: (context, params) => const TechnicalWritingsWidget(),
+        ),
+        FFRoute(
+          name: 'CreativeWritings',
+          path: '/CreativeWritings',
+          builder: (context, params) => const CreativeWritingsWidget(),
+        ),
+        FFRoute(
+          name: 'Blogs',
+          path: '/blogs',
+          builder: (context, params) => const BlogsWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -255,7 +270,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

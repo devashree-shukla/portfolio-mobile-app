@@ -5,7 +5,7 @@
 
 
     <application
-        android:label="DevashreeShuklaPortfolio"
+        android:label="Devashree Shukla"
         tools:replace="android:label"
         android:icon="@mipmap/ic_launcher"
         android:requestLegacyExternalStorage="true">
@@ -45,7 +45,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="devashreeshuklaportfolio" android:host="devashreeshuklaportfolio.com" />
+                <data android:scheme="devashreeshukla" android:host="devashreeshukla.com" />
             </intent-filter>
 
         </activity>

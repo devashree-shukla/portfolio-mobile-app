@@ -2,17 +2,17 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/request_manager.dart';
 
-import 'projects_widget.dart' show ProjectsWidget;
+import 'technical_writings_widget.dart' show TechnicalWritingsWidget;
 import 'package:flutter/material.dart';
 
-class ProjectsModel extends FlutterFlowModel<ProjectsWidget> {
+class TechnicalWritingsModel extends FlutterFlowModel<TechnicalWritingsWidget> {
   /// Query cache managers for this widget.
 
-  final _loadProjectsManager = StreamRequestManager<List<ProjectsRecord>>();
-  Stream<List<ProjectsRecord>> loadProjects({
+  final _loadProjectsManager = StreamRequestManager<List<BlogsRecord>>();
+  Stream<List<BlogsRecord>> loadProjects({
     String? uniqueQueryKey,
     bool? overrideCache,
-    required Stream<List<ProjectsRecord>> Function() requestFn,
+    required Stream<List<BlogsRecord>> Function() requestFn,
   }) =>
       _loadProjectsManager.performRequest(
         uniqueQueryKey: uniqueQueryKey,
